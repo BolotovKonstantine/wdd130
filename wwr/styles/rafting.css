@@ -45,16 +45,16 @@ p {
     color: var(--secondary-color);
     top: 10px;
     left: 300px;
-    background-color: rgba(21,71,52,0.5)
 }
 .hero article {
     position: absolute;
     color: var(--secondary-color);
-    top: 50px;
-    background-color: rgba(21,71,52,0.5)
+    top: 230px;
+    background-color: rgba(21,71,52,0.3)
 }
 .hero article img {
     float: right;
+    padding: 20px;
     width: 150px;
     height: auto;
 }
