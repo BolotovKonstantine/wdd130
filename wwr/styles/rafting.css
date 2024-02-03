@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Onest&display=swap");
 :root {
-    --primary-color: #000000;
-    --secondary-color: #FFFFFC;
-    --accent1-color: #BEB7A4 ;
-    --accent2-color: #FF7F11 ;
+    --primary-color: #315961 ;
+    --secondary-color: #fcfef9;
+    --accent1-color: #f3ede2 ;
+    --accent2-color: #e395b1 ;
 
     --heading-font: 'Onest',serif;
     --paragraph-font: 'Onest',serif;
 
-    --nav-background-color: #FFFFFC;
-    --nav-link-color: #000000;
+    --nav-background-color: #315961;
+    --nav-link-color: #fcfef9;
     --nav-hover-link-color: #000000;
     --nav-hover-background-color: #BEB7A4;
 }
@@ -17,7 +17,34 @@ body {
     font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 200px;
+    /*background-color: var(--primary-color);*/
 }
+header {
+    display: grid;
+    grid-template-columns: 300px auto;
+    align-items: center;
+    max-width: 960px;
+    background-color: var(--nav-background-color);
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.logo {
+    justify-self: center;
+}
+header nav a {
+    color: var(--nav-link-color);
+	display: block;
+    padding: 10px;
+    margin: 1px;
+	text-decoration: none;
+    border: 1px solid black;
+    flex-grow: 1;
+    text-align: center;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -29,7 +56,7 @@ p {
 }
 
 .logo img{
-    width: 200px;
+    width: 150px;
     height: auto;
 }
 .hero {
@@ -60,6 +87,13 @@ p {
 }
 .hero article p {
     color: var(--secondary-color);
+}
+.history {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.history h2 {
 }
 section img {
     max-width: 600px;
