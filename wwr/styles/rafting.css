@@ -16,7 +16,8 @@
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
-    padding: 200px;
+    padding: 20px;
+    margin: auto;
     /*background-color: var(--primary-color);*/
 }
 header {
@@ -99,22 +100,40 @@ p {
 .pict {
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-    margin: 1px;
-    padding: 0;
+    grid-template-columns: min-content min-content min-content min-content min-content ;
+    max-width: 960px;
 }
 .pict h2 {
     grid-column: 1 / 6;
 }
+.pict figure{
+    margin: 0;
+}
 
 section img {
-    max-width: 200px;
+    max-width: 190px;
     height: auto;
     margin-left: 1px;
+}
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--nav-background-color);
+
+}
+footer p {
+    color: var(--nav-link-color);
+    justify-self: center;
+}
+footer nav {
+    justify-self: right;
+    align-self: center;
+    margin-right: 40px;
 }
 .sociallinks img {
     width: 50px;
     height: auto;
+    margin: 10px;
 }
 .sociallinks a {
     text-decoration: none;
