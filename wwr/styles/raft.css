@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css?family=Onest&display=swap");
+
+:root {
+    --primary-color: #315961;
+    --secondary-color: #fcfef9;
+    --accent1-color: #f3ede2;
+    --accent2-color: #e395b1;
+    --heading-font: 'Onest', serif;
+    --paragraph-font: 'Onest', serif;
+    --nav-background-color: #315961;
+    --nav-link-color: #fcfef9;
+    --nav-hover-link-color: #000000;
+    --nav-hover-background-color: #BEB7A4;
+}
+
+body, header, .container {
+    max-width: 960px;
+    margin: auto;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    padding: 20px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 300px auto;
+    align-items: center;
+    background-color: var(--nav-background-color);
+}
+
+.logo {
+    justify-self: center;
+}
+
+.logo img, .hero img, .sociallinks img, .team-members img {
+    width: 150px;
+    height: auto;
+}
+
+header nav, footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+header nav a, footer p, .sociallinks a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+}
+
+header nav a {
+    display: block;
+    padding: 10px;
+    margin: 1px;
+    border: 1px solid black;
+    flex-grow: 1;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+.hero {
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 10px;
+    left: 300px;
+}
+
+.hero article, .hero article p {
+    color: var(--secondary-color);
+}
+
+.hero article {
+    position: absolute;
+    top: 230px;
+    background-color: rgba(21,71,52,0.3);
+}
+
+.history, .pict {
+    display: grid;
+    text-align: center;
+}
+
+.history {
+    grid-template-columns: auto auto;
+}
+
+.history h2, .pict h2 {
+    grid-column: 1 / -1;
+}
+
+.pict {
+    grid-template-columns: repeat(5, min-content);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--nav-background-color);
+}
+
+footer p {
+    justify-self: center;
+}
+
+footer nav {
+    justify-self: right;
+    margin-right: 40px;
+}
+
+.sociallinks img {
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    padding-top: 20px;
+}
+
+.contact-details, .left-column, .contact-form {
+    padding-right: 20px;
+}
+
+.contact-details {
+    flex: 1;
+}
+
+.left-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-section {
+    margin-bottom: 40px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 2;
+    padding-left: 20px;
+}
+
+#googleMap {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    border: none;
+}
+
+.form-group, .form-radio-group, .form-row, .form-row .form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label, .form-radio-group legend {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-row .form-group {
+    flex: 1 1 48%; /* Changed to flex property to allow wrapping on small screens */
+}
+
+.form-radio-group label {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 0; /* Removed bottom margin to align with other radio buttons */
+}
+
+.form-radio-group {
+    display: flex;
+    align-items: center; /* Aligns legend and radio buttons */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form label input[type="radio"],
+.contact-form label input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.contact-form .submit-button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.contact-form .submit-button:hover {
+    background-color: var(--nav-hover-background-color);
+}
